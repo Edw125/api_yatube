@@ -4,8 +4,8 @@ from rest_framework.generics import get_object_or_404
 
 from posts.models import Group, Post, User, Comment
 
-from .serializers import CommentSerializer, GroupSerializer, \
-    PostSerializer, UserSerializer
+from .serializers import (CommentSerializer, GroupSerializer,
+                          PostSerializer, UserSerializer)
 
 
 class PostViewSet(viewsets.ModelViewSet):
